@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 #revenue_by_family=pd.pivot_table(data=orders_compl,index='Snack_type',values=['total','discount','order_id'],aggfunc={'total':'sum','discount':'sum','order_id':'count'},margins=True)
-orders=pd.read_csv(r'/Project_5/Monthly Orders for snacks.csv')
+orders=pd.read_csv(r'/Project_5/Monthly Orders for snacks.csv') 
 orders['datetime']=pd.to_datetime(orders['created_at'])
 orders['year']=pd.DatetimeIndex(orders['datetime']).year
 orders['month']=pd.DatetimeIndex(orders['datetime']).month
